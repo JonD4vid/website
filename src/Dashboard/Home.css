@@ -1,9 +1,9 @@
 .jumbotron{
     margin-bottom: 4em;
-    background-color: 
+    background-color: red;
 }
 
-person-wrappe{
+person-wrapper{
     margin-bottom: 2em;
 }
 
@@ -25,5 +25,12 @@ img{
 
 .head{
     background-color: red,
+
+}
+
+.about{
+    background-color: red;
+    justify-content: center;
+    display: flex,
 
 }

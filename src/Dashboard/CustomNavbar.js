@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Navbar, Nav, NavItem, Image, Row} from 'react-bootstrap';
+import {Navbar, Nav, NavItem, Image, Row, Container} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './CustomNavbar.css'
 import image from '../assets/male.png'
@@ -7,9 +7,11 @@ import image from '../assets/male.png'
 class CustomNavbar extends Component {
     render() {
         return (
-           <Navbar default collapseOnSelect >
-  
+           <Navbar sticky='top'  collapseOnSelect >
+  <Container>
+
                    <Link to="/">
+                   
                    <Navbar.Brand>
                    <Row className="show-grid text-center">
 
@@ -22,17 +24,18 @@ class CustomNavbar extends Component {
         alt="React Bootstrap logo"
       /> 
       
-      <p className="PageTitle">Sandbox</p> 
+      <p className="PageTitle" >Sandbox</p> 
       </Row>
-
                  </Navbar.Brand>
                  </Link>
+                 </Container>
+
                 <Navbar.Toggle />
                 <Navbar.Collapse>
                     <Nav>
-                        <Nav.Link eventKey={1} componentClass={Link} href="/" to="/">Home</Nav.Link>
-                        <Nav.Link eventKey={2} componentClass={Link} href="/about" to="/about">About</Nav.Link>
-                        <Nav.Link eventKey={3} componentClass={Link} href="/news" to="/news">News</Nav.Link>
+                        <Nav.Link eventKey={1}  componentClass={Link} href="/" to="/">Home</Nav.Link>
+                        <Nav.Link eventKey={2}  componentClass={Link} href="/about" to="/about">About</Nav.Link>
+                        <Nav.Link eventKey={3}  componentClass={Link} href="/news" to="/news">News</Nav.Link>
                         
                     </Nav> 
                 </Navbar.Collapse>

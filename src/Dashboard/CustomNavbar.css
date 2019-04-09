@@ -1,6 +1,6 @@
 
 .navbar{
-    background-color: #129fcb
+    background-color: #fff
 }
 .navbar-expand .navbar-collapse {
     display: -ms-flexbox!important;
@@ -37,4 +37,9 @@ html {
 
 *, ::after, ::before {
     box-sizing: border-box;
+}
+
+Nav.Link{
+    font-size: 30;
+    color: red
 }
