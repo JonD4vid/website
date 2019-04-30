@@ -78,7 +78,7 @@ class Home extends Component {
        </Row>
        </Container>
      </div>  
-     <div style={{backgroundColor: 'red', justifyContent:'center', textAlign: 'center', margin:'2em',}}>
+     <div style={{backgroundColor: '#fafafa', justifyContent:'center', textAlign: 'center', margin:'2em',}}>
      <h3>About Us</h3>
 
      <Row style={{ marginBottom: '2em'}}>
@@ -167,16 +167,20 @@ style={{height:200, width: 200, borderRadius: 10,}}
        </Container>
 
        <div style={{backgroundColor:'#fff'}}>
-            <div style={{backgroundColor:'blue'}}>
-<Container>
+            <div style={{backgroundColor:'#000c20'}}>
+<Container style={{justifyContent: 'center', display: 'flex', color: '#fff'}}>
   <Row>
-    <Col>1 of 2</Col>
-    <Col>2 of 2</Col>
+    <Col  xs={12} sm={6} className="footer-nav">1 of 2</Col>
+    <Col xs={12} sm={6} className="footer-nav">2 of 2</Col>
   </Row>
   <Row>
-    <Col>1 of 3</Col>
-    <Col>2 of 3</Col>
-    <Col>3 of 3</Col>
+    <Col  xs={12} sm={4} >1 of 3</Col>
+    <Col xs={12} sm={4} style={{ flexDirection: 'row'}}>
+<p>FB</p>
+<p>LinkedIn</p>
+<p>Instagram</p>
+    </Col>
+    <Col xs={12} sm={4}>3 of 3</Col>
   </Row>
   </Container>
             </div>
@@ -188,3 +192,18 @@ style={{height:200, width: 200, borderRadius: 10,}}
 }
 
 export default Home;
+
+const socialMediaIcons = [
+  {
+    url: 'https://github.com/andrewgbliss',
+    className: 'fa-github-square',
+  },
+  {
+    url: 'https://gitlab.com/andrewgbliss',
+    className: 'fa-gitlab',
+  },
+  {
+    url: 'https://www.npmjs.com/~andrewgbliss',
+    className: 'fa-npm',
+  },
+];

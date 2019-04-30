@@ -1,6 +1,13 @@
 
-.navbar{
-    background-color: #fff
+.navbar-container{
+    background-color: #fafafa;
+    border-color: red;
+    box-shadow: 0px 1px 10px #999;
+    border-radius: 10px 10px 10px 10px;
+    padding-left: 25px;
+    
+
+    
 }
 .navbar-expand .navbar-collapse {
     display: -ms-flexbox!important;

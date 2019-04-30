@@ -7,7 +7,7 @@ import image from '../assets/male.png'
 class CustomNavbar extends Component {
     render() {
         return (
-           <Navbar sticky='top'  collapseOnSelect >
+           <Navbar className="navbar-container" sticky='top'  collapseOnSelect >
   <Container>
 
                    <Link to="/">
