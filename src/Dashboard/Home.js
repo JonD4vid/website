@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import {Jumbotron, Card, Container, Row, Col, Image, Button} from 'react-bootstrap';
+import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 import './Home.css';
 import male from '../assets/male.png';
 import image from '../assets/mic.png';
@@ -9,8 +10,8 @@ import image from '../assets/mic.png';
 class Home extends Component {
     render() {
         return (
-            <div>
-                <Jumbotron style={{}}>
+            <div style={{backgroundColor:'#fff'}}>
+                <Jumbotron>
                 <h2>Welcome to Jon's Sandbox!</h2>
                     <p>We'll be building from scratch and connecting using php/node js very soon</p>
 
@@ -78,7 +79,7 @@ class Home extends Component {
        </Row>
        </Container>
      </div>  
-     <div style={{backgroundColor: '#fafafa', justifyContent:'center', textAlign: 'center', margin:'2em',}}>
+     <div style={{backgroundColor: '#fafafa', justifyContent:'center', textAlign: 'center', margin:'2em', paddingTop: 30, paddingBottom: 30,}}>
      <h3>About Us</h3>
 
      <Row style={{ marginBottom: '2em'}}>
@@ -167,22 +168,44 @@ style={{height:200, width: 200, borderRadius: 10,}}
        </Container>
 
        <div style={{backgroundColor:'#fff'}}>
-            <div style={{backgroundColor:'#000c20'}}>
-<Container style={{justifyContent: 'center', display: 'flex', color: '#fff'}}>
-  <Row>
-    <Col  xs={12} sm={6} className="footer-nav">1 of 2</Col>
-    <Col xs={12} sm={6} className="footer-nav">2 of 2</Col>
-  </Row>
-  <Row>
-    <Col  xs={12} sm={4} >1 of 3</Col>
-    <Col xs={12} sm={4} style={{ flexDirection: 'row'}}>
-<p>FB</p>
-<p>LinkedIn</p>
-<p>Instagram</p>
-    </Col>
-    <Col xs={12} sm={4}>3 of 3</Col>
-  </Row>
-  </Container>
+            <div style={{backgroundColor:'#fafafa'}}>
+            <MDBFooter color="blue" className="font-small pt-4 mt-4">
+      <MDBContainer fluid className="text-center text-md-left">
+        <MDBRow>
+          <MDBCol md="6" style={{backgroundColor: 'green'}}>
+            <h5 className="footer-title">Contact Me</h5>
+            <p className="footer-subtitle">
+                I'm always willing to network with developers all over the world! Let's Chat.
+            </p>
+          </MDBCol>
+          <MDBCol md="6" style={{backgroundColor: 'red'}}>
+          <MDBRow>
+
+            <h5 className="title">Links</h5>
+            <ul style={{display:'flex', alignItems:'flex-end', flexDirection: 'row'}}>
+              <li className="list-unstyled">
+                <a href="#!">Link 1</a>
+              </li>
+              <li className="list-unstyled">
+                <a href="#!">Link 2</a>
+              </li>
+              <li className="list-unstyled">
+                <a href="#!">Link 3</a>
+              </li>
+              <li className="list-unstyled">
+                <a href="#!">Link 4</a>
+              </li>
+            </ul>
+</MDBRow>
+          </MDBCol>
+        </MDBRow>
+      </MDBContainer>
+      <div className="footer-copyright text-center py-3">
+        <MDBContainer fluid>
+          &copy; {new Date().getFullYear()} Copyright: Jon Wilson
+        </MDBContainer>
+      </div>
+    </MDBFooter>
             </div>
             </div>
 

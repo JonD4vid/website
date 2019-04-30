@@ -13,6 +13,8 @@ class Dashboard extends Component {
   render() {
     return (
           <Router>
+
+          {/*Remove Container tag to widen components to screen */}
             <Container>
               <Navbar />
                 <Route exact path="/" component={Home} />
