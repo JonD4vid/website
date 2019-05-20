@@ -15,12 +15,12 @@ class Dashboard extends Component {
           <Router>
 
           {/*Remove Container tag to widen components to screen */}
-            <Container>
+            {/* <Container> */}
               <Navbar />
                 <Route exact path="/" component={Home} />
                 <Route exact path="/about" component={About} />
                 <Route exact path="/news" component={News} />
-            </Container>
+            {/* </Container> */}
           </Router>
     );
   }

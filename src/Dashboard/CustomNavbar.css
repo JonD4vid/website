@@ -1,10 +1,11 @@
 
 .navbar-container{
-    background-color: #fafafa;
+    background-color: #fff;
     border-color: red;
     box-shadow: 0px 1px 10px #999;
-    border-radius: 10px 10px 10px 10px;
-    padding-left: 25px;
+    border-radius: 0px 0px 10px 10px;
+    padding-left: 75px;
+    padding-right: 75px;
     
 
     
@@ -27,11 +28,30 @@
     align-items: center;
 }
 
-.PageTitle{
-    margin: 10px,0px,10px,0px
+h2{
+    color:green;
+    margin-left: 10px;
+    font-size: 22px;
     
 }
 
+a.nav-link h3{
+    font-size: 22px;
+    font-family: sans-serif; 
+    position: relative;
+    top: 15%;
+
+
+}
+
+.nav-list{
+    margin-left: 30px;
+}
+
+li{
+    display: inline;
+    margin: 5px; 
+}
 Nav Nav.link{
 
     font-size: 30;
