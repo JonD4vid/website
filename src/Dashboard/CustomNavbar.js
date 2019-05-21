@@ -7,7 +7,9 @@ import image from "../assets/male.png";
 class CustomNavbar extends Component {
     render() {
         return (
-            <Navbar className="navbar-container" sticky="top" collapseOnSelect>
+            <Navbar className="navbar-container" 
+            // sticky="top" 
+            collapseOnSelect>
                     <Link to="/">
                         <Navbar.Brand>
                             <Row className="logo">

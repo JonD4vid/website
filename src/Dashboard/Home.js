@@ -1,31 +1,92 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
-import {Jumbotron, Card, Container, Row, Col, Image, Button} from 'react-bootstrap';
+import {Jumbotron, Carousel, Card, Container, Row, Col, Image, Button} from 'react-bootstrap';
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 import './Home.css';
 import { IoLogoFacebook, IoLogoInstagram, IoLogoTwitter } from "react-icons/io";
 import male from '../assets/male.png';
 import image from '../assets/mic.png';
+import nerd from '../assets/nerd.png';
+import nerd2 from '../assets/nerd2.jpg';
+import home from '../assets/home.jpeg';
+
 
 
 class Home extends Component {
     render() {
         return (
-          <Container style={{ backgroundColor: "#fff" }}>
+          <Container style={{ backgroundColor: "#fff", width: '100%' }}>
             <Container className="header" fluid>
+
+
+            <Carousel className="carousel">
+  <Carousel.Item>
+    <Image
+      className="d-block w-100"
+      src={home}
+      alt="First slide"
+      style={{
+        height: "100%",
+        width: "100%",
+        borderRadius: 10
+      }}
+      
+    />
+    <Carousel.Caption>
+      <h3>First slide label</h3>
+      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <Image
+      className="d-block w-100"
+      src={home}
+      alt="Third slide"
+      style={{
+        height: "100%",
+        width: "100%",
+        borderRadius: 10
+      }}
+    />
+
+    <Carousel.Caption>
+      <h3>Second slide label</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <Image
+      className="d-block w-100"
+      src={home}
+      alt="Third slide"
+      style={{
+        height: "100%",
+        width: "100%",
+        borderRadius: 10
+      }}
+    />
+
+    <Carousel.Caption>
+      <h3>Third slide label</h3>
+      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+</Carousel>
+           <div className="hero-overlay">
               <h2>Welcome to Jon's Sandbox!</h2>
               <p>
                 We'll be building from scratch and connecting using
                 php/node js very soon
               </p>
 
-              <Link to="/about">
-                <Button variant="outline-primary">About</Button>
+              <Link to="/admin">
+                <Button variant="outline-primary">Admin</Button>
               </Link>
 
               <Link to="/news">
                 <Button variant="outline-secondary">News</Button>
               </Link>
+              </div>
             </Container>
             <div className="head">
               <Container className="services-container">
@@ -106,7 +167,7 @@ class Home extends Component {
               style={{
                 paddingLeft: 20,
                 paddingRight: 20,
-                backgroundColor: "#fafafa",
+                // backgroundColor: "#fafafa",
                 justifyContent: "center",
                 textAlign: "center",
                 margin: "2em",
@@ -147,7 +208,7 @@ class Home extends Component {
               <Row style={{ marginBottom: "2em", textAlign: "left" }}>
                 <Col xs={6} md={6}>
                   <Image
-                    src={image}
+                    src={nerd}
                     alt="React Bootstrap logo"
                     fluid={true}
                     style={{
@@ -171,10 +232,36 @@ class Home extends Component {
                   </h4>
                 </Col>
               </Row>
+              <Row style={{ marginBottom: "1em", textAlign: "left", marginTop: '5%', }}>
+                <Col xs={6} md={6}>
+                <h4 className="text-one">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua.Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commodo consequat.Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore
+                    eu fugiat nulla pariatur.Excepteur sint occaecat
+                    cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </h4>
+                </Col>
+                <Col xs={6} md={6}>
+                  <Image
+                    src={nerd2}
+                    alt="React Bootstrap logo"
+                    fluid={true}
+                    style={{
+                      height: "100%",
+                      width: "100%",
+                      borderRadius: 20
+                    }}
+                  />
+                </Col>
+              </Row>
             </div>
 
             <Container>
-              <h3>Gallery</h3>
 
               <Row>
                 <Col xs={12} sm={4} className="person-wrapper">

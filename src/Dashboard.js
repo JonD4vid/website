@@ -7,6 +7,7 @@ import Home from './Dashboard/Home';
 import About from './Dashboard/About';
 import News from './Dashboard/News';
 import Navbar from './Dashboard/CustomNavbar';
+import Admin from './Dashboard/Admin';
 import { Container } from 'react-bootstrap';
 
 class Dashboard extends Component {
@@ -20,6 +21,8 @@ class Dashboard extends Component {
                 <Route exact path="/" component={Home} />
                 <Route exact path="/about" component={About} />
                 <Route exact path="/news" component={News} />
+                <Route exact path="/admin" component={Admin} />
+
             {/* </Container> */}
           </Router>
     );
